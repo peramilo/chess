@@ -47,8 +47,8 @@ namespace WindowsFormsApplication2
             this.MinimumSize = new Size(675, 695);
             this.CenterToScreen();
             string imei, imej;
-            for(int i=0;i<8;i++)
-                for(int j=0;j<8;j++)
+            for(int i = 0; i < 8; i++)
+                for(int j = 0; j < 8; j++)
                 {
                     dugme[i, j] = new Button()
                     {
@@ -68,7 +68,7 @@ namespace WindowsFormsApplication2
                    
                 }
              
-           for (int i=0;i<8;i++)                                    //Postavljanje figura
+           for (int i = 0; i < 8; i++)                                    //Postavljanje figura
            {
                dugme[i, 1].Image = BP; dugme[i, 1].Tag = "BP";
                dugme[i, 6].Image = WP; dugme[i, 6].Tag = "WP";
@@ -297,7 +297,7 @@ namespace WindowsFormsApplication2
                else if (ClickedButton.Tag != null) a = false;
                else a = true;
            }
-           if (a==true && q==0 && SahB == false)
+           if (a == true && q == 0 && SahB == false)
            {
                Klik2.Tag = "WQ";
                Klik2.Image = WQ;
@@ -509,8 +509,7 @@ namespace WindowsFormsApplication2
                     
                 }
                 if (p == 6 && Top4 == false && dugme[5, 0].Tag == null && dugme[6, 0].Tag == null)
-                {
-                    
+                {                   
                     dugme[7, 0].Tag = null;
                     dugme[7, 0].Image = null;
                     dugme[5, 0].Tag = "BR";
